@@ -1,0 +1,782 @@
+/* Here we are added google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans:wght@800&display=swap");
+
+/* Here Start css */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #fff;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+}
+.hero {
+  width: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(28, 100, 255, 0.97) 0%,
+      rgba(16, 62, 163, 0.7566) 100%
+    );
+  height: 648px;
+  border-radius: 0px 0px 48px 48px;
+}
+.hero_bg {
+  height: 648px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.hero_bg img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero_container {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+/* Logo Css start */
+
+.logo_section {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: -10px;
+}
+.logo_section img {
+  width: 100%;
+
+  margin-right: 1rem;
+}
+.logo_section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  font-family: "open sans", sans-serif;
+}
+.heading span {
+  color: #ffd600;
+}
+.sub_heading {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+  margin: 1rem 0;
+}
+.hero_btn_sections {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  font-family: "fira sans", sans-serif;
+  font-weight: 400;
+}
+.hero_btns {
+  min-width: 315px;
+  height: 58px;
+  border-radius: 50px;
+  border: 0;
+  font-family: "fira sans", sans-serif;
+  font-weight: 400;
+}
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+}
+.input input {
+  font-family: "fira sans", sans-serif;
+
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 2px solid rgba(255, 255, 255, 0.49);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.13);
+  border-radius: 57px;
+  position: relative;
+  left: -30px;
+}
+.input::placeholder {
+  color: #ffffff;
+}
+.input input:focus {
+  outline: none;
+  border: 0;
+}
+.input:focus::placeholder {
+  color: #ffffff;
+}
+.input label {
+  position: relative;
+  left: 15px;
+}
+
+.hero_getLink_btn {
+  margin-left: 0.5em;
+  background: #eba10d;
+  transition: all 0.3s ease;
+  color: #f8fff9;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.hero_getLink_btn:hover {
+  cursor: pointer;
+  background: #ffd600;
+}
+.hero_getLink_btn:focus {
+  outline: none;
+}
+.hero_getLink_btn:active {
+  outline: none;
+}
+.hero_left {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+}
+/* hero_left_bottom Start */
+
+.hero_left_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 3rem;
+}
+.hero_left_bottom h1 {
+  color: #fff;
+  margin: 0;
+  font-family: "fira sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 42px;
+  text-align: right;
+}
+.paytm_btn {
+  margin-left: 0.5em;
+  background: #fff;
+  transition: all 0.3s ease;
+  padding: 0.5em 1em;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paytm_btn img {
+  width: 100%;
+  margin: 0.5em 1em;
+}
+.paytm_btn:hover {
+  cursor: pointer;
+  background: #ffd600;
+}
+
+/* Right side css start */
+
+.hero_right {
+  /* height: 652px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  width: 325px;
+}
+.right_Bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero_right_bg {
+  position: relative;
+  z-index: 0;
+}
+.mobile_wall {
+  position: absolute;
+  z-index: 1;
+}
+.right_content {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 660px;
+  width: 325px;
+  padding: 1rem;
+  border-radius: 48px;
+}
+.right_content_heading {
+  font-family: "open sans", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 65px;
+  color: #fff;
+}
+.right_content_heading span {
+  color: #ffd600;
+}
+
+.right_content_sub_heading {
+  font-family: "fira sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+}
+.right_content_top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.mySlides img {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  width: 25.22px;
+  height: 5.75px;
+  margin: 0 2px;
+  background: #cbd2de;
+  border-radius: 50px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background: #0556fb;
+  border: 1px solid #1e61e9;
+  box-shadow: 0px 0px 4px rgba(29, 98, 239, 0.45);
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Here start the WINNER’S Testimonials */
+
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.testimonials_heading {
+  font-family: "open sans", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 68px;
+  text-align: right;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #d9e4fc;
+}
+.testimonials_heading span {
+  color: #4f4e4e;
+}
+.testimonials_cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  width: 100%;
+}
+.testimonials_card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 330px;
+  height: 340px;
+  background: #ffffff;
+  border-radius: 11px;
+  filter: drop-shadow(0px 4px 20px rgba(174, 195, 255, 0.25));
+}
+.testimonials_content {
+  font-family: "Fira Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #6e7c8a;
+}
+.quots {
+  font-family: "Girassol";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 82px;
+  line-height: 169.2%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgba(47, 113, 255, 0.62);
+  transform: rotate(-180deg);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  position: absolute;
+  bottom: -1rem;
+  right: 1rem;
+}
+.testimonials_card_img {
+  width: 115px;
+  height: 115px;
+}
+.testimonials_card_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* Why Our Game */
+.why_our_game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.why_our_game_heading {
+  font-family: "open sans", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 68px;
+  text-align: right;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #d9e4fc;
+}
+.why_our_game_heading span {
+  color: #4f4e4e;
+}
+.why_our_game_cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  width: 100%;
+}
+.why_our_game_card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 210px;
+}
+.why_our_game_card_img {
+  width: 80px;
+  height: 80px;
+  background: #eff3ff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.why_our_game_card_heading {
+  font-family: "fira sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 60px;
+  color: #202b51;
+  text-align: center;
+}
+.why_our_game_card_content {
+  font-family: "roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #748596;
+}
+
+/* FAQ Start Here */
+
+.faq {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.faq_container {
+  width: 100%;
+  padding: 1rem 2rem;
+}
+.faq_heading {
+  font-family: "open sans", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 68px;
+  text-align: right;
+  letter-spacing: 0.01em;
+  color: #485061;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+.faq_heading span {
+  color: #d9e4fc;
+}
+.accordion h1 {
+  font-family: "fira sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1e1d1d;
+}
+.accordion .panel {
+  font-family: "fira sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 174.2%;
+  letter-spacing: 0.02em;
+  color: #8292a2;
+}
+
+.accordion {
+  position: relative;
+  height: 55px;
+  background: #ffffff;
+  border: 1px solid #e4edff;
+  display: flex;
+  border-radius: 6px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+  margin: 0 0 1rem 0;
+}
+.accordion .label {
+  position: relative;
+  cursor: pointer;
+}
+.accordion .label::before {
+  content: "+";
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+.accordion .panel {
+  position: relative;
+  background: white;
+  height: 0;
+  text-align: justify;
+  overflow: hidden;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.accordion.activeAccor {
+  height: 113px;
+  background: #ffffff;
+  border: 1px solid #e4edff;
+  border-radius: 6px;
+}
+.accordion.activeAccor .panel {
+  height: 55px;
+  background: #f7f8fb;
+  border: 1px solid #e4edff;
+  border-radius: 0px 0px 6px 6px;
+  margin-top: 0.5em;
+}
+.accordion.activeAccor .label {
+  font-family: "fira sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2f71ff;
+}
+.accordion.activeAccor .label::before {
+  content: "-";
+  font-size: 30px;
+}
+
+/* Footer start Here */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 2rem;
+  background: #001c5a;
+  width: 100%;
+  height: 325px;
+}
+.footer_container {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.footer_heading {
+  font-family: "fira sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125.3%;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-feature-settings: "cpsp" on;
+  justify-content: flex-end;
+  color: #ffffff;
+  margin: 1rem 0 0.2rem 0;
+}
+.footer_payment_methods {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.social_media_heading {
+  font-family: "fira sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125.3%;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-feature-settings: "cpsp" on;
+  justify-content: flex-end;
+  color: #ffffff;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.social_media {
+  margin-top: 1rem;
+}
+.social_icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.social_icons li {
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+/* footer links */
+
+.footer_links {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.footer_links ul {
+  margin-right: 4rem;
+}
+.footer_links a {
+  font-family: "fira sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125.3%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+  font-feature-settings: "cpsp" on;
+
+  color: #ffffff;
+}
+.footer_links ul li {
+  margin: 1rem 0;
+}
+
+.footer_copyright {
+  background: #002880;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  font-family: "fira sans", sans-serif;
+}
+.footer_copyright {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 125.3%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+/* Mobile css Start */
+
+/* media query(max-width: 991px) */
+
+@media screen and (max-width: 998px) {
+  .hero_container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .hero {
+    height: auto;
+  }
+  .hero_left {
+    width: 100%;
+    align-items: center;
+  }
+  .hero_btn_sections {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .heading {
+    font-size: 32px;
+    line-height: 40px;
+    width: 100%;
+    text-align: left;
+    margin: 0 0 1rem 0;
+  }
+  .hero_btn_sections .input {
+    display: none;
+  }
+  .hero_getLink_btn {
+    width: 100%;
+    min-width: 200px;
+    font-size: 21px;
+    line-height: 16px;
+    margin: 0 0 1rem 0;
+    position: relative;
+    bottom: -625px;
+    z-index: 2;
+  }
+  .hero_left_bottom {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: -560px;
+    z-index: 2;
+  }
+  .hero_left_bottom h1 {
+    font-size: 1.2rem;
+  }
+  .paytm_btn {
+    margin: 0;
+  }
+  .hero_right {
+    margin-right: 0;
+    position: relative;
+    top: -90px;
+  }
+  .why_our_game_card {
+    margin-top: 1rem;
+    width: auto;
+  }
+  .why_our_game_card_content {
+    display: none;
+  }
+  .why_our_game_card_img {
+    width: 40px;
+    height: 40px;
+  }
+  .accordion.activeAccor {
+    height: 150px;
+  }
+  .accordion.activeAccor .panel {
+    height: 100px;
+  }
+}

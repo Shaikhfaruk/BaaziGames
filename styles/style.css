@@ -140,6 +140,24 @@ a {
   position: relative;
   left: 15px;
 }
+.bonus_btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-family: "fira sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  border: 0;
+  color: #ffffff;
+  width: 226px;
+  height: 32px;
+  background: #2f71ff;
+  border-radius: 2px 2px 19px 19px;
+}
 
 .hero_getLink_btn {
   margin-left: 0.5em;
@@ -158,12 +176,15 @@ a {
   cursor: pointer;
   background: #ffd600;
 }
-.hero_getLink_btn:focus {
+.hero_getLink_btn:focus,
+.bonus_btn:focus {
   outline: none;
 }
-.hero_getLink_btn:active {
+.hero_getLink_btn:active,
+.bonus_btn:active {
   outline: none;
 }
+
 .hero_left {
   display: flex;
   align-items: flex-start;
@@ -748,7 +769,7 @@ a {
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    bottom: -560px;
+    bottom: -590px;
     z-index: 2;
   }
   .hero_left_bottom h1 {
@@ -760,7 +781,7 @@ a {
   .hero_right {
     margin-right: 0;
     position: relative;
-    top: -90px;
+    top: -110px;
   }
   .why_our_game_card {
     margin-top: 1rem;
@@ -778,5 +799,44 @@ a {
   }
   .accordion.activeAccor .panel {
     height: 100px;
+  }
+  .bonus_btn {
+    display: flex;
+    z-index: 1;
+    position: relative;
+    bottom: -608px;
+  }
+  .testimonials_heading {
+    font-size: 23px;
+    text-align: center;
+  }
+  .testimonials_cards {
+    margin-top: 0;
+  }
+  .footer_links {
+    display: none;
+  }
+  .footer_container {
+    align-items: center;
+    justify-content: center;
+  }
+  .footer_top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+  }
+  .footer_heading {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .social_media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }

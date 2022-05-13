@@ -723,6 +723,9 @@ a {
 
 /* Mobile css Start */
 
+.install_app {
+  display: none;
+}
 .install_app_heading_bar {
   margin-bottom: 1rem;
 }
@@ -993,5 +996,8 @@ a {
   }
   .faq_heading {
     font-size: 28px;
+  }
+  .install_app {
+    display: block;
   }
 }

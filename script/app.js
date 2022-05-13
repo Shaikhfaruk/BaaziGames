@@ -61,17 +61,36 @@ function currentSlide(n) {
   showSlidesTest((slideIndexTest = n));
 }
 
-function showSlidesTest() {
+function showSlidesTest(card) {
   let i;
   let slides = document.getElementsByClassName("testimonials_card");
   for (i = 0; i < slides.length; i++) {
     // slides[i].style.display = "none";
-    slides[i].classList.add("fade-in-right");
+
+    slides[i].classList.remove("card--left");
+    slides[i].classList.remove("card--center");
+    slides[i].classList.remove("card--right");
   }
-  slideIndexTest++;
-  if (slideIndexTest > slides.length) {
-    slideIndexTest = 1;
+  slides[card].classList.add("card--center");
+  if (card == 0) {
+    slides[2].classList.add("card--left");
+    slides[1].classList.add("card--right");
   }
-  slides[slideIndexTest - 1].style.display = "flex";
-  setTimeout(showSlidesTest, 4000); // Change image every 4 seconds
+  if (card == 1) {
+    slides[0].classList.add("card--left");
+    slides[2].classList.add("card--right");
+  }
+  if (card == slides.length - 1) {
+    slides[1].classList.add("card--left");
+    slides[0].classList.add("card--right");
+  }
+
+  // slideIndexTest++;
+  // if (slideIndexTest > slides.length) {
+  //   slideIndexTest = 1;
+  // }
+  // slides[slideIndexTest - 1].style.display = "flex";
+  // slides[slideIndexTest - 1].classList.add("fade-in-right");
+
+  setTimeout(showSlidesTest, 2000); // Change image every 4 seconds
 }

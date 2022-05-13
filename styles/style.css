@@ -401,6 +401,8 @@ a {
 .fade-in-right {
   -webkit-animation: fade-in-right 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-right 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+
+  transform: scale(0.75) translate(-335px, 0px) rotateY(10deg);
 }
 @-webkit-keyframes fade-in-right {
   0% {
@@ -426,6 +428,19 @@ a {
     opacity: 1;
   }
 }
+
+.card--left {
+  transform: translate(-335px, 0px) rotateY(10deg);
+}
+
+.card--center {
+  transform: translate(0px, 0px) rotateY(0deg);
+}
+
+.card--right {
+  transform: translate(335px, 0px) rotateY(-10deg);
+}
+
 .testimonials_card_active {
   display: flex;
 }

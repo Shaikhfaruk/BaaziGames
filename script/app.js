@@ -46,3 +46,32 @@ for (i = 0; i < accordion.length; i++) {
     this.classList.toggle("activeAccor");
   });
 }
+
+// testimonials_cards slider
+
+let slideIndexTest = 1;
+showSlidesTest(slideIndexTest);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlidesTest((slideIndexTest += n));
+}
+
+function currentSlide(n) {
+  showSlidesTest((slideIndexTest = n));
+}
+
+function showSlidesTest() {
+  let i;
+  let slides = document.getElementsByClassName("testimonials_card");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    slides[i].classList.add("fade-in-right");
+  }
+  slideIndexTest++;
+  if (slideIndexTest > slides.length) {
+    slideIndexTest = 1;
+  }
+  slides[slideIndexTest - 1].style.display = "flex";
+  setTimeout(showSlidesTest, 4000); // Change image every 4 seconds
+}

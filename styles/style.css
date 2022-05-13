@@ -350,6 +350,7 @@ a {
   justify-content: center;
   flex-direction: column;
   margin-top: 2rem;
+  position: relative;
 }
 .testimonials_heading {
   font-family: "open sans", sans-serif;
@@ -373,6 +374,8 @@ a {
   flex-wrap: wrap;
   margin: 2rem 0;
   width: 100%;
+  max-width: 1000px;
+  position: relative;
 }
 .testimonials_card {
   display: flex;
@@ -385,6 +388,37 @@ a {
   background: #ffffff;
   border-radius: 11px;
   filter: drop-shadow(0px 4px 20px rgba(174, 195, 255, 0.25));
+}
+.fade-in-right {
+  -webkit-animation: fade-in-right 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-right 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@-webkit-keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.testimonials_card_active {
+  display: flex;
 }
 .testimonials_content {
   font-family: "Fira Sans";
@@ -421,6 +455,18 @@ a {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+}
+
+.testimonials_btn {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  padding: 0 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonials_btn a {
+  cursor: pointer;
 }
 
 /* Why Our Game */

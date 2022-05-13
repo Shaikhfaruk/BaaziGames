@@ -723,6 +723,155 @@ a {
 
 /* Mobile css Start */
 
+.install_app_heading_bar {
+  margin-bottom: 1rem;
+}
+.install_app_card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: relative;
+  margin: 2rem 0 1rem 0;
+}
+
+.install_app_heading {
+  font-family: "fira sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #404d54;
+  margin-bottom: 1rem;
+}
+.install_app_sub_heading {
+  font-family: "fira sans", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #8292a2;
+  margin-bottom: 1rem;
+}
+.instrns_content {
+  font-family: "fira sans", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #8292a2;
+  margin: 0.5rem 0;
+}
+.instrns {
+  font-family: "fira sans", sans-serif;
+  display: flex;
+  color: #6e7c8a;
+  align-items: flex-start;
+  width: 50%;
+  text-align: left;
+  flex-direction: column;
+}
+.instrns_heading {
+  font-family: "fira sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #2f71ff;
+}
+.instrns_content {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8292a2;
+}
+.install_app_card_back {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.install_app_popup {
+  display: flex;
+  width: 295px;
+  max-width: 295px;
+  height: 168px;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(175, 205, 251, 0.26);
+  border-radius: 7px;
+  padding: 1rem;
+  -webkit-box-shadow: 0px -2px 15px 0px rgba(186, 186, 186, 1);
+  -moz-box-shadow: 0px -2px 15px 0px rgba(186, 186, 186, 1);
+  box-shadow: 0px -2px 15px 0px rgba(186, 186, 186, 1);
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.alert_instrns {
+  font-family: "fira sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #525c67;
+  padding: 0 0.5em;
+}
+.install_app_popup_top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 100%;
+}
+.install_app_btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+.install_app_btn {
+  font-family: "fira sans", sans-serif;
+  border-radius: 3px;
+  width: 84px;
+  height: 38px;
+  border: 0;
+  margin-left: 1rem;
+}
+.install_app_btn.ok {
+  background: #2f71ff;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.install_app_btn.cancel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #8292a2;
+}
+.install_app_btn:hover {
+  cursor: pointer;
+}
+.install_app_btn:focus {
+  outline: none;
+}
+.download_popup {
+  top: 70px;
+}
+.download_pop {
+  align-items: center;
+  justify-content: center;
+}
+
 /* media query(max-width: 991px) */
 
 @media screen and (max-width: 998px) {
@@ -838,5 +987,11 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+  .why_our_game_heading {
+    font-size: 23px;
+  }
+  .faq_heading {
+    font-size: 28px;
   }
 }

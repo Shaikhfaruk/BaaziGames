@@ -1015,6 +1015,7 @@ a {
   }
   .hero {
     height: auto;
+    position: relative;
   }
   .hero_left {
     width: 100%;
@@ -1147,5 +1148,19 @@ a {
   }
   .why_our_game {
     margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero_left_bottom {
+    bottom: -80px;
+  }
+  .testimonials_card {
+    width: 250px;
+    height: auto;
+    padding: 0.5em;
+  }
+  .quots {
+    bottom: -2rem;
   }
 }

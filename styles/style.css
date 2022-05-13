@@ -1020,7 +1020,7 @@ a {
     top: -110px;
   }
   .why_our_game_card {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     width: auto;
   }
   .why_our_game_card_content {
@@ -1083,5 +1083,23 @@ a {
   }
   .install_app {
     display: block;
+  }
+  .why_our_game_card_heading {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+  }
+  .why_our_game_card_img {
+    width: 52px;
+    height: 52px;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  .why_our_game_card_img img {
+    width: 100%;
+    height: 100%;
+  }
+  .why_our_game {
+    margin-bottom: 2rem;
   }
 }

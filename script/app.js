@@ -65,7 +65,7 @@ function showSlidesTest() {
   let i;
   let slides = document.getElementsByClassName("testimonials_card");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    // slides[i].style.display = "none";
     slides[i].classList.add("fade-in-right");
   }
   slideIndexTest++;

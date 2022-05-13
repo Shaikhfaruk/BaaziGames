@@ -376,14 +376,23 @@ a {
   width: 100%;
   max-width: 1000px;
   position: relative;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  padding: 1rem;
+}
+.testimonials_cards::-webkit-scrollbar {
+  display: none;
 }
 .testimonials_card {
+  margin: 0 1rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
   margin-top: 2rem;
   width: 330px;
+  min-width: 330px;
   height: 340px;
   background: #ffffff;
   border-radius: 11px;

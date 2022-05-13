@@ -1163,4 +1163,11 @@ a {
   .quots {
     bottom: -2rem;
   }
+  .install_app_popup {
+    width: 270px;
+    margin-right: 1rem;
+  }
+  .why_our_game_cards {
+    padding: 0 1rem;
+  }
 }
